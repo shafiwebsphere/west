@@ -18,6 +18,8 @@ pipeline {
 			script {
 				currentBuild.displayName = "#" + env.BUILD_NUMBER + " " + params.action + " eks-" + params.cluster
 				plan = params.cluster + '.plan'
+				sh 'echo $currentBuild.displayName'
+                                sh 'echo $plan'
 			}
 		}
 	}
