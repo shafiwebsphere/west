@@ -1,10 +1,10 @@
-#  * VPC Resources
+#
+# VPC Resources
 #  * VPC
 #  * Subnets
 #  * Internet Gateway
 #  * Route Table
-#  * Route Table association
-
+#
 
 resource "aws_vpc" "unzer" {
   cidr_block = "10.0.0.0/16"
